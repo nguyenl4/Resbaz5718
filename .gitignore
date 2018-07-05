@@ -1,16 +1,33 @@
-# Node rules:
-## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
-
-## Dependency directory
-## Commenting this out is preferred by some people, see
-## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
-node_modules
-
-# Book build output
-_book
-
-# eBook build output
-*.epub
-*.mobi
-*.pdf
+## The practice file 5 July 2018 Resbaz
+## Open Git Bash
+## Create the global user name in Git which helps us to access from other computers
+  git config --global user.name "whatevernameyoulike"
+## Create the user email in Git
+  git config --global user.email emailaddress@gmail.com
+## Create the folder named planets
+  mkdir planets
+  cd planets
+## Create a folder named "moons" in the folder plannets
+  git init
+  mkdir moons
+## Prepare to create the text file  in folder moons
+  git init
+## See the status in the current folder
+  git status
+## Change directory to folder moond
+  cd moons
+## Create the text file named "mars.txt" (The nano filename.txt is also used to call on the file after it is created)
+   nano mars.txt
+## Check the status of moons folder after creating the file => the filename is in red color => it needs to be added
+   git status
+## Add the file has just created
+  git add mars.txt
+## Commit what happend on the file
+   git commit
+## Call on the mars.txt
+  nano mars.txt
+## Then, type or edit the content of the text file mars.txt, Ctrl X to exit
+## See the status after editing => something in red colour since the edition has not been updated => need to be commited
+  git status
+  git commit -m "the first edition"
+(## The remaining will be completed later)
